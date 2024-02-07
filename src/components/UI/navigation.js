@@ -1,6 +1,6 @@
 import React from "react";
 import "./navigation.css";
-import icon from "../assets/logo.svg";
+import icon from "../../assets/logo.svg";
 
 const Navigation = () => {
   return (

@@ -1,18 +1,16 @@
 import React from "react";
 import Navigation from "./navigation";
-import mealsImage from "../assets/header_image.jpg"
-import "./header.css"
-import Summary from "./summary";
-import MealsList from "./MealsList";
-
+import mealsImage from "../../assets/header_image.jpg";
+import "./header.css";
+import Summary from "../Layout/summary";
+import Meal from "../Meals/Meals";
 const Header = () => {
   return (
-    < >
+    <>
       <Navigation></Navigation>
       <img className="mealsImage" src={mealsImage} alt="logo"></img>
       <Summary></Summary>
-      <MealsList></MealsList>
-      
+      <Meal></Meal>
     </>
   );
 };

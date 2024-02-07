@@ -1,0 +1,54 @@
+.mealsList {
+  top: 77vh;
+  left: 20vw;
+  position: absolute;
+  width: 60%;
+  border-radius: 15px;
+  background-color: white;
+  color: black;
+  margin: auto;
+  padding: 1% 0%;
+}
+ul {
+  padding: 0%;
+  margin: 0%;
+}
+
+li {
+  margin: 2px 3%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+hr {
+  margin: 2% 3%;
+  color: rgba(0, 0, 0, 0.276);
+}
+.price {
+  color: rgba(165, 42, 42, 0.785);
+}
+.add_item {
+  background-color: rgb(111, 12, 12);
+  color: white;
+  font-weight: bolder;
+  padding: 5px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.rightIcon {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  margin-right: 0px;
+  width: fit-content;
+}
+.no_of_item {
+  height: 25px;
+  width: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.242);
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 0px;
+  text-align: center;
+}
