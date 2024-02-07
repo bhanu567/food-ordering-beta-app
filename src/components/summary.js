@@ -4,7 +4,7 @@ import "./summary.css";
 const Summary = () => {
   return (
     <div className="border_box">
-      <h1>Delicious Food, Delivered to you</h1>
+      <h1 className="summary_header">Delicious Food, Delivered to you</h1>
 
       <p className="first">
         choose your favourite meal from our broad selection of avaible meals and

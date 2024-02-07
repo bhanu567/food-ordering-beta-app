@@ -10,7 +10,7 @@
   box-shadow: 10px 10px 10px 10px rgba(7, 7, 7, 0.717);
   text-align: center;
 }
-h1 {
+.summary_header {
   margin-top: 2%;
   margin-bottom: 6%;
 }
