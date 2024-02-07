@@ -1,0 +1,47 @@
+#backdrop {
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+.portal {
+  top: 30vh;
+  left: 30vw;
+  position: absolute;
+  height: fit-content;
+  width: 40%;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 20px;
+  z-index: 100;
+}
+#h2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+button {
+  padding: 10px 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+#close {
+  background-color: transparent;
+  color: rgb(118, 18, 18);
+  border: 1px solid rgb(118, 18, 18);
+}
+#order {
+  color: white;
+  background-color: rgb(118, 18, 18);
+}
