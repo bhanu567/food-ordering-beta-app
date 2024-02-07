@@ -8,7 +8,7 @@ const MealsList = (props) => {
     <ul>
       <li>
         <b>{props.meal.name}</b>
-        <div className="rightIcon">
+        <div className="righticon">
           <b>Amount</b>
           <div className="no_of_item">{count}</div>
         </div>

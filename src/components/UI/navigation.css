@@ -3,11 +3,21 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 8vh;
+  height: 7vh;
   background-color: rgb(94, 10, 10);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.rightIcon {
+  height: 75%;
+  width: 20%;
+  background-color: rgb(70, 10, 10);
+  border-radius: 20px;
+  margin: auto;
+  margin-right: 5%;
+  padding: auto;
+  cursor: pointer;
 }
 .innerdiv {
   height: 90%;
@@ -24,25 +34,18 @@
   width: 21%;
   color: white;
   margin: auto 0px;
+  margin-left: 20px;
 }
 .mealsImage {
   width: 100%;
   height: 50vh;
 }
-.rightIcon {
-  height: 75%;
-  width: 20%;
-  background-color: rgb(70, 10, 10);
-  border-radius: 20px;
-  margin: auto;
-  margin-right: 5%;
-  padding: auto;
-}
+
 h1 {
   margin: auto;
   margin-left: 2%;
 }
-h2 {
+h4 {
   margin: auto 3%;
   margin-left: 0;
 }
@@ -50,10 +53,10 @@ h2 {
   background-color: rgb(186, 8, 8);
   color: white;
   font-weight: bold;
-  height: 65%;
-  width: 15%;
+  height: 55%;
+  width: 20%;
   border-radius: 30px;
   margin: auto 0;
-  font-size: 110%;
   text-align: center;
+  padding-bottom: 25px;
 }

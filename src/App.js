@@ -1,16 +1,19 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { useState } from "react";
 import Header from "./components/UI/header";
-import ReactPortal from "./components/Layout/ReactPortal";
+import ReactPortal from "./components/Cart/ReactPortal";
 
 function App() {
+  const [displayCart, setDisplayCart] = useState(false);
+  const OpenCart = () => {
+    setDisplayCart(true);
+  };
+  const CloseCart = () => {
+    setDisplayCart(false);
+  };
   return (
     <div>
-      <Header></Header>
-      {ReactDOM.createPortal(
-        <ReactPortal></ReactPortal>,
-        document.getElementById("react_portal")
-        )}
+      <Header displayCart={OpenCart}></Header>
+      {displayCart && <ReactPortal displayCart={CloseCart}></ReactPortal>}
     </div>
   );
 }
