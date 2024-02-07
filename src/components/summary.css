@@ -1,0 +1,22 @@
+.border_box {
+  width: 50%;
+  top: 40vh;
+  left: 25vw;
+  position: absolute;
+  background-color: rgba(30, 28, 28, 0.968);
+  color: white;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 10px rgba(7, 7, 7, 0.717);
+  text-align: center;
+}
+h1 {
+  margin-top: 2%;
+  margin-bottom: 6%;
+}
+.first {
+  margin: 2% 2%;
+}
+.second {
+  margin: 2% 6%;
+}
