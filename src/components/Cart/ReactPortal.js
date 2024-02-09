@@ -1,15 +1,20 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useContext } from "react";
 import ReactDOM from "react-dom";
 import "./ReactPortal.css";
+import AuthContext from "../../store/auth-context";
 
-const Backdrop = () => <div id="backdrop" ></div>;
+const Backdrop = (props) => {
+  return <div id="backdrop" onClick={props.displayCart}></div>;
+}
 const BillSummary = (props) => {
+  const authCtx = useContext(AuthContext);
+  const ListofItems = authCtx.itemList.map((itemName)=><h3>{itemName}</h3>)
   return (
     <div id="portal">
-      <h3>Sushi</h3>
+      {ListofItems}
       <h2 id="h2">
         <div>Total Amount</div>
-        <div>$ 35.62</div>
+        <div>$ {authCtx.totalPrice}</div>
       </h2>
       <div id="button">
         <button id="close" onClick={props.displayCart}>Close</button>
@@ -22,7 +27,7 @@ const ReactPortal = (props) => {
   return (
     <Fragment>
       {ReactDOM.createPortal(
-        <Backdrop></Backdrop>,
+        <Backdrop displayCart={props.displayCart}></Backdrop>,
         document.getElementById("backdrop")
       )}
       {ReactDOM.createPortal(

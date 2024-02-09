@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useContext} from "react";
+import AuthContext from "../../store/auth-context";
 import "./navigation.css";
 import icon from "../../assets/logo.svg";
 
 const Navigation = (props) => {
+  const authCtx = useContext(AuthContext);
   return (
     <div className="main_header">
       <h1>
@@ -12,7 +14,7 @@ const Navigation = (props) => {
         <div className="innerdiv">
           <img className="icon" src={icon} alt="cart_logo"></img>
           <h4>Your Cart</h4>
-          <div className="number_of_items">0</div>
+          <div className="number_of_items">{authCtx.noOfItemsInCart}</div>
         </div>
       </div>
     </div>
