@@ -16,13 +16,13 @@ const Meals = [
     price: 16.5,
   },
   {
-    id: 1,
+    id: 3,
     name: "Barbecue Burger",
     desc: "American, raw, meaty",
     price: 12.99,
   },
   {
-    id: 1,
+    id: 4,
     name: "Green Bowl",
     desc: "Healthy...and green...",
     price: 18.99,
@@ -32,7 +32,7 @@ const Meal = () => {
   return (
     <div className="mealsList">
       {Meals.map((meal, index) => (
-        <MealsList key={index} meal={meal}></MealsList>
+        <MealsList key={index} index={index} meal={meal}></MealsList>
       ))}
     </div>
   );

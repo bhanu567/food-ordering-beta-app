@@ -1,10 +1,11 @@
-#backdrop {
+#backdropcss {
   left: 0;
   right: 0;
   position: fixed;
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
   cursor: pointer;
 }
 
@@ -24,6 +25,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-left: 2%;
 }
 #button {
   display: flex;
@@ -31,7 +33,8 @@
   justify-content: flex-end;
   margin-top: 10px;
 }
-button {
+#order,
+#close {
   padding: 10px 40px;
   border-radius: 20px;
   cursor: pointer;
@@ -42,11 +45,78 @@ button {
   color: rgb(118, 18, 18);
   border: 1px solid rgb(118, 18, 18);
 }
-#close:hover{
+#close:hover {
   color: white;
   background-color: rgb(118, 18, 18);
 }
 #order {
   color: white;
   background-color: rgb(118, 18, 18);
+}
+
+#item_name {
+  width: 100%;
+  font-size: larger;
+  font-weight: bolder;
+}
+#item_count {
+  width: 40px;
+  height: 23px;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: small;
+  padding-left: 10px;
+  font-weight: bold;
+}
+#item_price {
+  width: 30%;
+  color: rgb(118, 18, 18);
+  font-weight: bolder;
+}
+#total_price {
+  margin-right: 10%;
+  color: brown;
+}
+#overall {
+  display: flex;
+  flex-direction: row;
+}
+#content {
+  margin: 2%;
+  width: 70%;
+}
+#inner_contnt {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+#button_increase_decrease {
+  width: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#button_decrease,
+#button_increase {
+  margin-top: 30%;
+  margin-right: 10%;
+  width: 60%;
+  height: 30%;
+  border: 2px solid rgb(118, 18, 18);
+  border-radius: 5px;
+  background-color: transparent;
+  color: rgb(118, 18, 18);
+  justify-content: center;
+  padding-top: 1px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+#button_increase {
+  color: white;
+  background-color: rgb(118, 18, 18);
+}
+hr {
+  margin-left: 2%;
+  color: rgb(118, 18, 18);
+  width: 98%;
 }

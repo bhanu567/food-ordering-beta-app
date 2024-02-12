@@ -1,15 +1,15 @@
 import React, { useState, useContext } from "react";
 import "./MealsList.css";
-import AuthContext from "../../store/auth-context";
+import CartContext from "../../store/cart-context";
 
 const MealsList = (props) => {
   const [count, setItem] = useState(0);
-  const authCtx = useContext(AuthContext);
+  const cartCtx = useContext(CartContext);
 
-  const increaseItemHandler=()=>{
+  const addItemHandler = () => {
     setItem(count + 1);
-    authCtx.increaseNoOfItemsInCart(props.meal.name, props.meal.price);
-  }
+    cartCtx.addItemsToCart(props.index, props.meal);
+  };
   return (
     <ul>
       <li>
@@ -21,7 +21,7 @@ const MealsList = (props) => {
       </li>
       <li>
         <i>{props.meal.desc}</i>
-        <button className="add_item" onClick={increaseItemHandler}>
+        <button className="add_item" onClick={addItemHandler}>
           +Add
         </button>
       </li>
